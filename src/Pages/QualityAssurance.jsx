@@ -1,44 +1,229 @@
 import React from "react";
-import { FaCheckCircle, FaCertificate, FaIndustry, FaClipboardCheck } from "react-icons/fa";
+import {
+  FaCheckCircle,
+  FaCertificate,
+  FaIndustry,
+  FaClipboardCheck,
+  FaShieldAlt,
+  FaAward,
+  FaBoxOpen,
+  FaArrowRight,
+} from "react-icons/fa";
+import Footer from "../components/Footer"; // path check kar lena
 
 const QualityAssurance = () => {
   const points = [
-    { icon: <FaCertificate />, text: "Certified and tested agricultural inputs" },
-    { icon: <FaIndustry />, text: "Verified suppliers and manufacturers" },
-    { icon: <FaCheckCircle />, text: "Multiple quality checks before dispatch" },
-    { icon: <FaClipboardCheck />, text: "Compliance with government regulations" },
+    {
+      icon: <FaCertificate />,
+      title: "Certified Products",
+      text: "All agricultural inputs undergo strict testing and certification.",
+    },
+    {
+      icon: <FaIndustry />,
+      title: "Verified Suppliers",
+      text: "We partner only with trusted and approved manufacturers.",
+    },
+    {
+      icon: <FaCheckCircle />,
+      title: "Quality Checks",
+      text: "Multiple inspections before products reach customers.",
+    },
+    {
+      icon: <FaClipboardCheck />,
+      title: "Compliance",
+      text: "Products meet government and industry quality standards.",
+    },
+  ];
+
+  const process = [
+    "Supplier Verification",
+    "Product Testing",
+    "Quality Inspection",
+    "Packaging Check",
+    "Safe Delivery",
   ];
 
   return (
-    <section className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto my-12">
-      <h2 className="text-3xl font-extrabold text-green-800 mb-6 relative inline-block">
-        Quality Assurance
-        <span className="absolute left-0 -bottom-1 w-20 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full"></span>
-      </h2>
+    <>
+      <div className="bg-gradient-to-b from-green-50 via-white to-green-100 min-h-screen">
 
-      <p className="text-gray-700 mb-8 leading-relaxed text-lg">
-        We follow strict quality control processes to ensure that every product
-        meets industry standards before reaching farmers.
-      </p>
+        {/* HERO SECTION */}
+        <section className="py-20 px-4">
+          <div className="max-w-7xl mx-auto text-center">
 
-      <ul className="space-y-5">
-        {points.map((item, index) => (
-          <li
-            key={index}
-            className="flex items-center gap-4 bg-green-50 p-4 rounded-lg shadow hover:shadow-md transition-all duration-300"
-          >
-            <div className="p-3 rounded-full bg-green-100 text-green-600 flex items-center justify-center w-12 h-12">
-              {item.icon}
+            <span className="bg-green-100 text-green-700 px-5 py-2 rounded-full font-semibold">
+              🛡️ Quality You Can Trust
+            </span>
+
+            <h1 className="mt-6 text-5xl md:text-6xl font-extrabold text-green-800">
+              Quality Assurance
+            </h1>
+
+            <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+              We maintain the highest standards of quality to ensure
+              every product delivered to farmers is safe, reliable,
+              certified, and effective.
+            </p>
+          </div>
+        </section>
+
+        {/* STATS */}
+        <section className="max-w-6xl mx-auto px-4 pb-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+            <div className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              <FaAward className="text-4xl text-green-600 mx-auto mb-3" />
+              <h3 className="text-3xl font-bold text-green-800">100%</h3>
+              <p className="text-gray-600">Certified Products</p>
             </div>
-            <span className="text-gray-800 text-lg font-medium">{item.text}</span>
-          </li>
-        ))}
-      </ul>
 
-      <p className="text-gray-600 mt-8 text-md">
-        Our goal is to build long-term trust by delivering consistent quality.
-      </p>
-    </section>
+            <div className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              <FaShieldAlt className="text-4xl text-green-600 mx-auto mb-3" />
+              <h3 className="text-3xl font-bold text-green-800">500+</h3>
+              <p className="text-gray-600">Quality Tests</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              <FaIndustry className="text-4xl text-green-600 mx-auto mb-3" />
+              <h3 className="text-3xl font-bold text-green-800">50+</h3>
+              <p className="text-gray-600">Verified Partners</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              <FaBoxOpen className="text-4xl text-green-600 mx-auto mb-3" />
+              <h3 className="text-3xl font-bold text-green-800">10K+</h3>
+              <p className="text-gray-600">Products Delivered</p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* QUALITY CARDS */}
+        <section className="max-w-7xl mx-auto px-4 pb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            {points.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-green-700 text-3xl mb-5">
+                  {item.icon}
+                </div>
+
+                <h3 className="text-xl font-bold text-green-800 mb-3">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* QUALITY PROCESS */}
+        <section className="max-w-6xl mx-auto px-4 pb-20">
+          <div className="bg-white rounded-[35px] shadow-xl p-10">
+
+            <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+              Our Quality Process
+            </h2>
+
+            <div className="grid md:grid-cols-5 gap-6">
+
+              {process.map((step, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                    {index + 1}
+                  </div>
+
+                  <h3 className="font-semibold text-gray-800">
+                    {step}
+                  </h3>
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+        {/* TRUST SECTION */}
+        <section className="max-w-7xl mx-auto px-4 pb-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+
+            <img
+              src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854"
+              alt="Quality Agriculture"
+              className="rounded-3xl shadow-2xl w-full h-[450px] object-cover"
+            />
+
+            <div>
+              <h2 className="text-4xl font-bold text-green-800 mb-6">
+                Building Trust Through Quality
+              </h2>
+
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Every product listed on Agri Shoppers goes through
+                strict quality evaluation. Our commitment ensures
+                farmers receive only trusted and reliable agricultural
+                products.
+              </p>
+
+              <div className="space-y-4">
+
+                <div className="flex gap-3">
+                  <FaCheckCircle className="text-green-600 mt-1" />
+                  <span>Rigorous quality inspections</span>
+                </div>
+
+                <div className="flex gap-3">
+                  <FaCheckCircle className="text-green-600 mt-1" />
+                  <span>Trusted supplier network</span>
+                </div>
+
+                <div className="flex gap-3">
+                  <FaCheckCircle className="text-green-600 mt-1" />
+                  <span>Government compliance standards</span>
+                </div>
+
+                <div className="flex gap-3">
+                  <FaCheckCircle className="text-green-600 mt-1" />
+                  <span>Farmer-first quality commitment</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="px-4 pb-20">
+          <div className="max-w-6xl mx-auto bg-gradient-to-r from-green-700 to-green-600 rounded-[40px] p-12 text-center text-white">
+
+            <h2 className="text-4xl font-bold mb-5">
+              Quality Products for Better Farming
+            </h2>
+
+            <p className="text-lg mb-8 max-w-3xl mx-auto">
+              We are committed to delivering reliable agricultural
+              products that farmers can trust every season.
+            </p>
+
+            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold flex items-center gap-3 mx-auto hover:bg-green-100 transition">
+              Learn More
+              <FaArrowRight />
+            </button>
+
+          </div>
+        </section>
+
+      </div>
+
+      {/* FOOTER */}
+      {/* <Footer /> */}
+    </>
   );
 };
 

@@ -1,68 +1,86 @@
-import React, { useState, useMemo } from "react";
-import { brandsData } from "../data/brandsData";
-import { Link } from "react-router-dom";
 
+import React from "react";
+import { brandsData } from "../data/brandsData";
 
 const Brands = () => {
-  const [viewAll, setViewAll] = useState(false);
-
-  const randomSixBrands = useMemo(() => {
-    return [...brandsData]
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 6);
-  }, []);
-
-  const visibleBrands = viewAll ? brandsData : randomSixBrands;
-
   return (
-    <section className="bg-[#eef6f2] py-14 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-b from-green-50 to-white py-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
-        <div className="flex items-center justify-between mb-10">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+        <div className="mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-800">
             Trusted Brands
           </h2>
 
-          <Link
-              to="/brands"
-              className="text-green-700 font-semibold hover:underline"
-            >
-              View All →
-            </Link>
+          <p className="text-gray-600 mt-2">
+            We partner with India's leading agricultural brands to provide
+            genuine and high-quality products.
+          </p>
+        </div>
+
+        {/* Auto Scroll */}
+        <div className="relative overflow-hidden">
+
+          <div
+            className="flex gap-5 animate-scroll"
+            style={{ width: "max-content" }}
+          >
+            {[...brandsData, ...brandsData].map((brand, index) => (
+              <div
+                key={index}
+                className="
+                  min-w-[180px]
+                  sm:min-w-[200px]
+                  bg-white
+                  rounded-2xl
+                  p-4
+                  border border-green-100
+                  shadow-md
+                  hover:shadow-xl
+                  transition-all
+                "
+              >
+                <div className="flex flex-col items-center">
+                  <img
+                    src={brand.logo}
+                    alt={brand.name}
+                    className="h-16 sm:h-20 object-contain"
+                  />
+
+                  <h3 className="mt-3 text-center font-semibold text-gray-800">
+                    {brand.name}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
 
         </div>
 
-        {/* Brands Grid */}
-        <div
-          className="
-            grid grid-cols-2
-            sm:grid-cols-3
-            md:grid-cols-4
-            lg:grid-cols-6
-            gap-4 sm:gap-6
-          "
-        >
-          {visibleBrands.map((brand) => (
-            <div
-              key={brand.id}
-              className="
-                bg-white rounded-2xl
-                p-4 sm:p-6
-                flex items-center justify-center
-                transition
-                hover:shadow-lg
-              "
-            >
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className="h-12 sm:h-14 object-contain grayscale hover:grayscale-0 transition"
-              />
-            </div>
-          ))}
-        </div>
       </div>
+
+      {/* CSS */}
+      <style>
+        {`
+          @keyframes scroll {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-50%);
+            }
+          }
+
+          .animate-scroll {
+            animation: scroll 25s linear infinite;
+          }
+
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}
+      </style>
     </section>
   );
 };
