@@ -28,8 +28,8 @@ import FarmerResources from "./Pages/FarmerResources";
 import PoliciesAndGuidelines from "./Pages/PoliciesAndGuidelines";
 import QualityAssurance from "./Pages/QualityAssurance";
 import Sitemap from "./Pages/Sitemap";
-import Cart from "./pages/Cart";
-import Wishlist from "./pages/Wishlist";
+import Cart from "./Pages/Cart";
+import Wishlist from "./Pages/Wishlist";
 
 function App() {
   const { pathname } = useLocation();
