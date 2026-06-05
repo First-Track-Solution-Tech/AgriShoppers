@@ -1,45 +1,215 @@
 import React from "react";
-import { FaUserShield, FaUndoAlt, FaShippingFast, FaBook } from "react-icons/fa";
+import {
+  FaUserShield,
+  FaUndoAlt,
+  FaShippingFast,
+  FaBook,
+  FaCheckCircle,
+  FaQuestionCircle,
+  FaArrowRight,
+} from "react-icons/fa";
+import Footer from "../components/Footer";
 
 const PoliciesAndGuidelines = () => {
   const policies = [
-    { icon: <FaUserShield />, text: "Privacy and data protection policy" },
-    { icon: <FaUndoAlt />, text: "Return, refund, and cancellation guidelines" },
-    { icon: <FaShippingFast />, text: "Shipping and delivery policies" },
-    { icon: <FaBook />, text: "User responsibilities and platform usage rules" },
+    {
+      icon: <FaUserShield />,
+      title: "Privacy Policy",
+      text: "Protection of customer information and secure data handling.",
+    },
+    {
+      icon: <FaUndoAlt />,
+      title: "Returns & Refunds",
+      text: "Transparent return, refund, and cancellation procedures.",
+    },
+    {
+      icon: <FaShippingFast />,
+      title: "Shipping Policy",
+      text: "Reliable delivery process and shipping guidelines.",
+    },
+    {
+      icon: <FaBook />,
+      title: "Terms of Use",
+      text: "Platform rules and customer responsibilities.",
+    },
   ];
 
   return (
-    <section className="bg-green-50 p-8 rounded-xl shadow-lg max-w-4xl mx-auto my-12">
-      <h2 className="text-3xl font-extrabold text-green-800 mb-6 relative inline-block">
-        Policies & Guidelines
-        <span className="absolute left-0 -bottom-1 w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full"></span>
-      </h2>
+    <>
+      <div className="bg-gradient-to-b from-green-50 via-white to-green-100 min-h-screen">
 
-      <p className="text-gray-700 mb-8 leading-relaxed text-lg">
-        Our policies are designed to ensure transparency, fairness, and safety
-        for all users.
-      </p>
+        {/* HERO SECTION */}
+        <section className="py-20 px-4 text-center">
+          <span className="bg-green-100 text-green-700 px-5 py-2 rounded-full font-semibold">
+            📜 Transparency & Trust
+          </span>
 
-      <ul className="space-y-5">
-        {policies.map((item, index) => (
-          <li
-            key={index}
-            className="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-md transition-all duration-300"
-          >
-            <div className="p-3 rounded-full bg-green-100 text-green-600 flex items-center justify-center w-12 h-12">
-              {item.icon}
+          <h1 className="text-5xl md:text-6xl font-extrabold text-green-800 mt-6">
+            Policies & Guidelines
+          </h1>
+
+          <p className="max-w-3xl mx-auto mt-6 text-lg text-gray-600">
+            Our policies are designed to ensure transparency, fairness,
+            security, and a trusted shopping experience for every farmer.
+          </p>
+        </section>
+
+        {/* POLICY CARDS */}
+        <section className="max-w-7xl mx-auto px-4 pb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {policies.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-green-700 text-3xl mb-5">
+                  {item.icon}
+                </div>
+
+                <h3 className="text-xl font-bold text-green-800 mb-3">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-600">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* RIGHTS & RESPONSIBILITIES */}
+        <section className="max-w-6xl mx-auto px-4 pb-20">
+          <div className="bg-white rounded-3xl shadow-xl p-10">
+            <h2 className="text-4xl font-bold text-green-800 mb-10 text-center">
+              User Rights & Responsibilities
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-10">
+
+              <div>
+                <h3 className="text-2xl font-bold text-green-700 mb-5">
+                  Your Rights
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Access your account information securely.</span>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Request returns and refunds as per policy.</span>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Secure payment and privacy protection.</span>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Fair and transparent service experience.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-green-700 mb-5">
+                  Your Responsibilities
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Provide accurate personal information.</span>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Follow platform terms and conditions.</span>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Respect community standards.</span>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <FaCheckCircle className="text-green-600 mt-1" />
+                    <span>Use services responsibly and ethically.</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <span className="text-gray-800 text-lg font-medium">{item.text}</span>
-          </li>
-        ))}
-      </ul>
+          </div>
+        </section>
 
-      <p className="text-gray-600 mt-8 text-md">
-        Please review these guidelines carefully to understand your rights and
-        responsibilities.
-      </p>
-    </section>
+        {/* FAQ */}
+        <section className="max-w-5xl mx-auto px-4 pb-20">
+          <h2 className="text-4xl font-bold text-center text-green-800 mb-10">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-6">
+
+            <div className="bg-white p-6 rounded-2xl shadow">
+              <div className="flex items-center gap-3 mb-2">
+                <FaQuestionCircle className="text-green-600" />
+                <h3 className="font-bold text-green-700">
+                  How do I request a refund?
+                </h3>
+              </div>
+              <p className="text-gray-600">
+                Refund requests can be submitted through your account dashboard
+                according to our refund policy.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow">
+              <div className="flex items-center gap-3 mb-2">
+                <FaQuestionCircle className="text-green-600" />
+                <h3 className="font-bold text-green-700">
+                  Is my personal information secure?
+                </h3>
+              </div>
+              <p className="text-gray-600">
+                Yes, we follow industry-standard security measures to protect
+                user information.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="max-w-6xl mx-auto px-4 pb-20">
+          <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-[40px] p-12 text-center text-white shadow-2xl">
+
+            <h2 className="text-4xl font-bold mb-4">
+              Need More Information?
+            </h2>
+
+            <p className="text-lg mb-8">
+              Our support team is available to help you understand any policy
+              or guideline.
+            </p>
+
+            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold flex items-center gap-3 mx-auto hover:bg-green-100 transition">
+              Contact Support
+              <FaArrowRight />
+            </button>
+
+          </div>
+        </section>
+
+      </div>
+
+      {/* FOOTER */}
+      <Footer />
+    </>
   );
 };
 

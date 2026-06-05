@@ -21,13 +21,13 @@ export const popularPicks = [
     name: "Soil Health Booster",
     price: "₹749",
     badge: "Best Seller",
-    image: "/images/popular 4.jpg",
+    image: "/images/fertilizer.jpg",
     },
     {
     name: "Advanced Weed Killer",
     price: "₹1,199",
     badge: "Popular",
-    image: "/images/popular 5.jpg",
+    image: "/images/irrigation.jpg",
     }
 ];
 

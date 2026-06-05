@@ -28,10 +28,40 @@ const bestselling = [
 ];
 
 const Bestselling = () => {
+
+  // ✅ ADD TO CART FUNCTION (same logic as PopularPicks)
+  const addToCart = (product) => {
+    try {
+      const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+
+      const existingItem = cart.find(
+        (item) => item.name === product.name
+      );
+
+      if (existingItem) {
+        existingItem.quantity = (existingItem.quantity || 1) + 1;
+      } else {
+        cart.push({
+          ...product,
+          quantity: 1,
+        });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      // 🔥 update navbar/cart count instantly
+      window.dispatchEvent(new Event("cartUpdated"));
+
+      alert(`${product.name} added to cart`);
+    } catch (error) {
+      console.error("Cart Error:", error);
+    }
+  };
+
   return (
     <section className="bg-gray-50 py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
@@ -43,22 +73,11 @@ const Bestselling = () => {
         </div>
 
         {/* Products Grid */}
-        <div
-          className="
-            grid grid-cols-1 
-            sm:grid-cols-2 
-            lg:grid-cols-4
-            gap-8
-          "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {bestselling.map((item) => (
             <div
               key={item.id}
-              className="
-                bg-white rounded-2xl overflow-hidden
-                border transition-all duration-300
-                hover:shadow-2xl hover:-translate-y-2
-              "
+              className="bg-white rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
             >
               {/* Image */}
               <div className="h-56 sm:h-60 overflow-hidden">
@@ -81,16 +100,14 @@ const Bestselling = () => {
                   </p>
 
                   <button
-                    className="
-                      px-4 py-2 text-sm font-semibold
-                      bg-green-600 text-white rounded-lg
-                      hover:bg-green-700 transition
-                    "
+                    onClick={() => addToCart(item)}
+                    className="px-4 py-2 text-sm font-semibold bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
                   >
                     Add to Cart
                   </button>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
