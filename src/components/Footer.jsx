@@ -108,7 +108,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-slate-800 text-center py-4 text-sm text-slate-400">
-          © 2025 AgriShoppers | Developed by First Track Solution Technologies.
+          © 2026 AgriShoppers | Developed by First Track Solution Technologies.
           All Rights Reserved.
         </div>
 

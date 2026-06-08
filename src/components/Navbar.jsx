@@ -205,7 +205,7 @@ const Navbar = () => {
             <img
               src="/images/logo.png"
               alt="AgriShoppers Logo"
-              className="h-10 md:h-12 object-contain"
+              className="h-10 w-auto object-contain scale-190"
             />
           </Link>
 
