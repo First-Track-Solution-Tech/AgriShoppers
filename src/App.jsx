@@ -30,6 +30,15 @@ import QualityAssurance from "./Pages/QualityAssurance";
 import Sitemap from "./Pages/Sitemap";
 import Cart from "./Pages/Cart";
 import Wishlist from "./Pages/Wishlist";
+import Seeds from "./Pages/Seeds";
+import CropProtection from "./Pages/CropProtection";
+import CropNutrition from "./Pages/CropNutrition";
+import Equipment from "./Pages/Equipment";
+import AnimalHusbandry from "./Pages/AnimalHusbandry";
+import Organic from "./Pages/Organic";
+import Services from "./Pages/Services";
+import SellWithUs from "./Pages/SellWithUs";
+import BulkOrders from "./Pages/BulkOrders";
 
 function App() {
   const { pathname } = useLocation();
@@ -55,6 +64,15 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/brands" element={<AllBrands />} />
+          <Route path="/seeds" element={<Seeds />} />
+          <Route path="/crop-protection" element={<CropProtection />} />
+          <Route path="/crop-nutrition" element={<CropNutrition />} />
+          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/animal-husbandry" element={<AnimalHusbandry />} />
+          <Route path="/organic" element={<Organic />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/sell-with-us" element={<SellWithUs />} />
+          <Route path="/bulk-orders" element={<BulkOrders />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/popular-picks" element={<AllPopularPicks />} />
           <Route path="/about" element={<About />} />

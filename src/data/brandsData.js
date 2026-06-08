@@ -4,7 +4,7 @@ export const brandsData = [
   { id: 2, name: "Syngenta", logo: "/brands/syngenta.png" },
   { id: 3, name: "Bayer", logo: "/brands/bayer.png" },
   { id: 4, name: "UPL", logo: "/brands/upl.png" },
-  { id: 5, name: "Dhanuka", logo: "/brands/dhanuka.png" },
+  { id: 5, name: "Dhanuka", logo: "/brands/Dhanuka.png" },
   { id: 6, name: "Rallis", logo: "/brands/rallis.png" },
   { id: 7, name: "FMC", logo: "/brands/fmc.png" },
   { id: 8, name: "Indofil", logo: "/brands/indofil.png" },
