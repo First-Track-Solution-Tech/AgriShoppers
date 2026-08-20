@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
 
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-800">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-olive-600">
             Why Choose Us
           </h2>
           <p className="text-gray-600 mt-3 text-sm sm:text-base max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
             <div
               key={i}
               className="
-                bg-gradient-to-b from-green-50 to-white
+                bg-gradient-to-b from-olive-100 to-white
                 rounded-2xl p-6 sm:p-7
                 text-center border
                 transition-all duration-300

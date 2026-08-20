@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+@theme {
+  /* Harvest Warmth — Olive Green */
+  --color-olive-50: #f6f7ee;
+  --color-olive-100: #e9ecd6;
+  --color-olive-200: #d3daae;
+  --color-olive-300: #b6c37c;
+  --color-olive-400: #9bab58;
+  --color-olive-500: #7d8f3f;
+  --color-olive-600: #626f31;
+  --color-olive-700: #4c5627;
+  --color-olive-800: #3e4622;
+  --color-olive-900: #343a1f;
+  --color-olive-950: #1a1e0f;
+
+  /* Harvest Warmth — Golden Wheat / Mustard */
+  --color-wheat-50: #fdf8ec;
+  --color-wheat-100: #faedc9;
+  --color-wheat-200: #f4d98d;
+  --color-wheat-300: #edc158;
+  --color-wheat-400: #e3a934;
+  --color-wheat-500: #d18f22;
+  --color-wheat-600: #b3711b;
+  --color-wheat-700: #8f571b;
+  --color-wheat-800: #74461c;
+  --color-wheat-900: #613b1c;
+
+  /* Soft Cream backgrounds */
+  --color-cream-50: #fffdf8;
+  --color-cream-100: #fdf7ea;
+  --color-cream-200: #faefd6;
+  --color-cream-300: #f3e2b8;
+
+  /* Espresso Brown — used by SearchBar panel */
+  --color-espresso-700: #4a3320;
+  --color-espresso-800: #382718;
+  --color-espresso-900: #281b10;
+  --color-espresso-950: #19110a;
+
+  /* Warm neutral ink for text + dark navbar ombre base */
+  --color-ink-50: #f7f6f2;
+  --color-ink-100: #e9e6dd;
+  --color-ink-200: #cfc9b8;
+  --color-ink-300: #a9a087;
+  --color-ink-400: #7d7460;
+  --color-ink-500: #5e5646;
+  --color-ink-600: #4a4436;
+  --color-ink-700: #3a3529;
+  --color-ink-800: #2c281f;
+  --color-ink-900: #201d17;
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: var(--color-ink-800);
+}

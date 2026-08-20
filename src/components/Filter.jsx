@@ -316,7 +316,7 @@ const Filter = ({ onApplyFilters }) => {
 
           <button
             onClick={applyFilters}
-            className="px-6 py-2 rounded-full bg-green-600 text-white hover:bg-green-700 transition"
+            className="px-6 py-2 rounded-full bg-olive-600 text-white hover:bg-olive-700 transition"
           >
             Apply Filters
           </button>

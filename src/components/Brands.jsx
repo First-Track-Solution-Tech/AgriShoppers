@@ -9,7 +9,7 @@ const Brands = () => {
 
         {/* Header */}
         <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-800">
+          <h2 className="text-3xl md:text-4xl font-bold text-olive-800">
             Trusted Brands
           </h2>
 
@@ -73,7 +73,7 @@ const Brands = () => {
           }
 
           .animate-scroll {
-            animation: scroll 25s linear infinite;
+            animation: scroll 45s linear infinite;
           }
 
           .animate-scroll:hover {

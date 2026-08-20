@@ -2,121 +2,122 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const slides = [
-{
-id: 1,
-image: "/images/slide1.jpg",
-title: "Smart Farming Starts Here",
-subtitle: "Modern solutions for better yield and profit",
-cta: true,
-},
-{
-id: 2,
-image: "/images/slide2.jpg",
-title: "Balanced Nutrition for Healthy Crops",
-subtitle: "Right nutrients at every growth stage",
-cta: false,
-},
-{
-id: 3,
-image: "/images/slide3.jpg",
-title: "Protect Crops, Increase Productivity",
-subtitle: "Trusted crop protection solutions",
-cta: true,
-},
+  {
+    id: 1,
+    image: "/images/slide1.jpg",
+    eyebrow: "🌾 Smart Farming Technology",
+    title: "Smart Farming Starts Here",
+    subtitle: "Modern solutions for better yield and profit",
+    cta: true,
+  },
+  {
+    id: 2,
+    image: "/images/slide2.jpg",
+    eyebrow: "🌱 Balanced Crop Nutrition",
+    title: "Balanced Nutrition for Healthy Crops",
+    subtitle: "Right nutrients at every growth stage",
+    cta: false,
+  },
+  {
+    id: 3,
+    image: "/images/slide3.jpg",
+    eyebrow: "🛡️ Trusted Crop Protection",
+    title: "Protect Crops, Increase Productivity",
+    subtitle: "Trusted crop protection solutions",
+    cta: true,
+  },
 ];
 
 const SlideBanner = () => {
-const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
 
-useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
-    setCurrent((prev) => (prev + 1) % slides.length);
+      setCurrent((prev) => (prev + 1) % slides.length);
     }, 5000);
 
- return () => clearInterval(interval);
+    return () => clearInterval(interval);
+  }, []);
 
+  return (
+    <section className="relative w-full overflow-hidden">
+      <div
+        className="flex transition-transform duration-1000 ease-in-out"
+        style={{
+          transform: `translateX(-${current * 100}%)`,
+        }}
+      >
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className="relative min-w-full h-[300px] sm:h-[360px] md:h-[430px] lg:h-[500px]"
+          >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover"
+            />
 
-}, []);
+            <div className="absolute inset-0 bg-gradient-to-tr from-ink-950/85 via-ink-900/30 to-transparent" />
 
-return ( <section className="relative w-full overflow-hidden mt-4">
-{/* Slides */}
-<div
-className="flex transition-transform duration-1000 ease-in-out"
-style={{
-transform: `translateX(-${current * 100}%)`,
-}}
->
-{slides.map((slide) => ( <div
-         key={slide.id}
-         className="relative min-w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px]"
-       >
-{/* Banner Image */} <img
-           src={slide.image}
-           alt={slide.title}
-           className="w-full h-full object-cover"
-         />
+            <div className="absolute left-4 right-4 bottom-5 sm:left-8 sm:right-auto sm:bottom-8 md:left-12">
+              <div
+                key={current === index ? `active-${slide.id}` : slide.id}
+                className={`bg-ink-900/60 backdrop-blur-md border border-wheat-400/30 rounded-2xl shadow-2xl p-4 sm:p-6 md:p-7 max-w-xl ${
+                  current === index ? "animate-hero-in" : ""
+                }`}
+              >
+                <span className="inline-block bg-wheat-400/20 border border-wheat-400/40 text-wheat-300 text-xs sm:text-sm font-semibold tracking-wide px-3 py-1 rounded-full">
+                  {slide.eyebrow}
+                </span>
 
-```
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/55" />
+                <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-cream-50">
+                  {slide.title}
+                </h2>
 
-        {/* Content */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8 w-full">
-            <div className="max-w-2xl text-center sm:text-left text-white">
+                <p className="mt-2 text-xs sm:text-sm md:text-base text-cream-200">
+                  {slide.subtitle}
+                </p>
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-                {slide.title}
-              </h2>
+                {slide.cta && (
+                  <div className="mt-5 flex flex-col sm:flex-row gap-3">
+                    <Link
+                      to="/products"
+                      className="bg-wheat-400 hover:bg-wheat-500 px-5 py-2.5 rounded-lg text-ink-900 font-semibold shadow-lg transition text-center"
+                    >
+                      Shop Now
+                    </Link>
 
-              <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-200">
-                {slide.subtitle}
-              </p>
+                    <Link
+                      to="/categories"
+                      className="border-2 border-cream-100 px-5 py-2.5 rounded-lg text-cream-100 hover:bg-cream-100 hover:text-olive-800 font-semibold transition text-center"
+                    >
+                      Explore Crops
+                    </Link>
+                  </div>
+                )}
 
-              {slide.cta && (
-                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-
-                  <Link
-                    to="/products"
-                    className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg text-white font-semibold transition w-full sm:w-auto text-center"
-                  >
-                    Shop Now
-                  </Link>
-
-                  <Link
-                    to="/categories"
-                    className="border-2 border-white px-6 py-3 rounded-lg text-white hover:bg-white hover:text-green-700 font-semibold transition w-full sm:w-auto text-center"
-                  >
-                    Explore Crops
-                  </Link>
-
+                <div className="flex gap-2 mt-5">
+                  {slides.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrent(i)}
+                      aria-label={`Go to slide ${i + 1}`}
+                      className={`h-2 rounded-full transition-all duration-300 ${
+                        current === i
+                          ? "w-6 bg-wheat-400"
+                          : "w-2 bg-cream-100/40 hover:bg-cream-100/70"
+                      }`}
+                    />
+                  ))}
                 </div>
-              )}
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
-    ))}
-  </div>
-
-  {/* Dots */}
-  {/* <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3 z-10">
-    {slides.map((_, index) => (
-      <button
-        key={index}
-        onClick={() => setCurrent(index)}
-        className={`h-3 w-3 rounded-full transition-all duration-300 ${
-          current === index
-            ? "bg-green-500 scale-125"
-            : "bg-white/70"
-        }`}
-      />
-    ))}
-  </div> */}
-</section>
-
-
-);
+    </section>
+  );
 };
 
 export default SlideBanner;
