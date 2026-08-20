@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <>
-      <div className="bg-gradient-to-b from-green-50 via-white to-green-100 min-h-screen">
+      <div className="bg-gradient-to-b from-olive-50 via-white to-olive-100 min-h-screen">
 
         {/* HERO SECTION */}
-        <section className="bg-gradient-to-r from-green-700 to-green-600 py-20 text-white">
+        <section className="bg-gradient-to-r from-olive-800 via-olive-600 to-cream-200 py-30 text-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -28,7 +28,7 @@ const Contact = () => {
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center hover:shadow-2xl transition">
               <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-wheat-600 mb-3">
                 Office Address
               </h3>
               <p className="text-gray-600">
@@ -44,7 +44,7 @@ const Contact = () => {
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center hover:shadow-2xl transition">
               <div className="text-5xl mb-4">📞</div>
-              <h3 className="text-xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-wheat-600 mb-3">
                 Call Us
               </h3>
               <p className="text-gray-600">
@@ -54,7 +54,7 @@ const Contact = () => {
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center hover:shadow-2xl transition">
               <div className="text-5xl mb-4">✉️</div>
-              <h3 className="text-xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-wheat-600 mb-3">
                 Email Us
               </h3>
               <p className="text-gray-600">
@@ -71,7 +71,7 @@ const Contact = () => {
 
             {/* Left */}
             <div>
-              <h2 className="text-4xl font-bold text-green-800 mb-6">
+              <h2 className="text-4xl font-bold text-olive-500 mb-6">
                 Get In Touch
               </h2>
 
@@ -131,7 +131,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-green-700 hover:bg-green-800 text-white py-4 rounded-xl font-semibold transition"
+                className="w-full bg-wheat-700 hover:bg-olive-500 text-white py-4 rounded-xl font-semibold transition"
               >
                 Send Message
               </button>
@@ -144,14 +144,14 @@ const Contact = () => {
         {/* QUICK SUPPORT */}
         <section className="max-w-7xl mx-auto px-4 pb-20">
 
-          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+          <h2 className="text-4xl font-bold text-center text-olive-500 mb-12">
             How Can We Help?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
 
             <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
-              <h3 className="font-bold text-green-700 text-xl mb-3">
+              <h3 className="font-bold text-wheat-700 text-xl mb-3">
                 Product Inquiry
               </h3>
               <p className="text-gray-600">
@@ -161,7 +161,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
-              <h3 className="font-bold text-green-700 text-xl mb-3">
+              <h3 className="font-bold text-wheat-700 text-xl mb-3">
                 Order Support
               </h3>
               <p className="text-gray-600">
@@ -171,7 +171,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
-              <h3 className="font-bold text-green-700 text-xl mb-3">
+              <h3 className="font-bold text-wheat-700 text-xl mb-3">
                 Farmer Assistance
               </h3>
               <p className="text-gray-600">
@@ -187,14 +187,14 @@ const Contact = () => {
         {/* FAQ */}
         <section className="max-w-5xl mx-auto px-4 pb-20">
 
-          <h2 className="text-4xl font-bold text-center text-green-800 mb-10">
+          <h2 className="text-4xl font-bold text-center text-olive-500 mb-10">
             Frequently Asked Questions
           </h2>
 
           <div className="space-y-5">
 
             <div className="bg-white p-6 rounded-2xl shadow">
-              <h3 className="font-bold text-green-700 mb-2">
+              <h3 className="font-bold text-olive-700 mb-2">
                 How long does delivery take?
               </h3>
 
@@ -205,7 +205,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow">
-              <h3 className="font-bold text-green-700 mb-2">
+              <h3 className="font-bold text-olive-700 mb-2">
                 Do you provide farming consultation?
               </h3>
 
@@ -221,7 +221,7 @@ const Contact = () => {
 
         {/* CTA */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
-          <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-[40px] p-12 text-center text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-olive-700 to-olive-500 rounded-[40px] p-12 text-center text-white shadow-2xl">
 
             <h2 className="text-4xl font-bold mb-5">
               Need Immediate Assistance?
@@ -231,7 +231,7 @@ const Contact = () => {
               Our support team is ready to assist you with any query.
             </p>
 
-            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-100 transition">
+            <button className="bg-cream-100 text-wheat-900 px-8 py-4 rounded-full font-bold hover:bg-green-100 transition">
               Contact Support
             </button>
 

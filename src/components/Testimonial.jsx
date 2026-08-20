@@ -29,7 +29,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-gradient-to-b from-olive-100 to-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         What Farmers Say
       </h2>

@@ -59,49 +59,54 @@ const Bestselling = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-14">
+    <section className="bg-cream-100 py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
+        <div className="text-center mb-14">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-olive-800">
             Bestselling Products
           </h2>
-          <p className="mt-2 text-gray-600 text-sm sm:text-base">
+          <p className="mt-2 text-ink-500 text-sm sm:text-base">
             Trusted by farmers across the country
           </p>
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
           {bestselling.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+              className="group relative transition-transform duration-300 hover:-translate-y-2"
             >
               {/* Image */}
-              <div className="h-56 sm:h-60 overflow-hidden">
+              <div className="relative h-52 sm:h-56 rounded-2xl overflow-hidden shadow-md">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover transition duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+
+                {/* Bestseller badge */}
+                <span className="absolute top-3 left-3 bg-wheat-400 text-ink-900 text-xs font-bold px-2.5 py-1 rounded-full shadow">
+                  🔥 Bestseller
+                </span>
               </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800">
+              {/* Overlapping content panel */}
+              <div className="relative -mt-8 mx-4 bg-white rounded-2xl border border-olive-100 shadow-lg p-4 sm:p-5 transition-all duration-300 group-hover:shadow-2xl group-hover:border-wheat-300">
+                <h3 className="text-base sm:text-lg font-semibold text-ink-800 truncate">
                   {item.name}
                 </h3>
 
-                <div className="flex items-center justify-between mt-4">
-                  <p className="text-green-700 text-lg font-bold">
+                <div className="flex items-center justify-between mt-3">
+                  <p className="text-wheat-600 text-lg font-bold">
                     {item.price}
                   </p>
 
                   <button
                     onClick={() => addToCart(item)}
-                    className="px-4 py-2 text-sm font-semibold bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+                    className="px-3.5 py-2 text-sm font-semibold bg-olive-700 text-white rounded-lg hover:bg-olive-800 transition"
                   >
                     Add to Cart
                   </button>

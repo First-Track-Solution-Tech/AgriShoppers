@@ -9,7 +9,7 @@ const AgriImpact = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-green-50 via-emerald-50 to-green-100 py-14">
+    <section className="bg-gradient-to-r from-wheat-100 via-ink-50 to-wheat-100 py-14">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -31,7 +31,7 @@ const AgriImpact = () => {
               key={index}
               className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition text-center"
             >
-              <p className="text-4xl font-extrabold text-green-600">
+              <p className="text-4xl font-extrabold text-olive-600">
                 {item.value}
               </p>
               <p className="mt-2 text-gray-700 font-medium">

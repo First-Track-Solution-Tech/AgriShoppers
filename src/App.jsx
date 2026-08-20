@@ -1,9 +1,9 @@
-
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ChatBox from "./components/Chatbox";
 import DesktopAgriInfo from "./components/DesktopAgriInfo";
 import BottomNav from "./components/BottomNav";
 
@@ -94,7 +94,9 @@ function App() {
           <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
       </main>
-
+ 
+          <ChatBox />
+        
       {/* Footer - All Pages */}
       <Footer />
 

@@ -10,21 +10,21 @@ import {
 const About = () => {
   return (
     <>
-    <div className="bg-gradient-to-b from-green-50 to-white min-h-screen">
+    <div className="bg-gradient-to-b from-wheat-50 to-white min-h-screen">
 
       {/* Hero Section */}
-      <section className="py-20">
+      <section className="py-40">
         <div className="max-w-7xl mx-auto px-4 text-center">
 
-          <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">
+          <span className="bg-olive-100 text-olive-700 px-4 py-2 rounded-full text-sm font-semibold">
             🌱 Empowering Farmers Across India
           </span>
 
-          <h1 className="mt-6 text-5xl md:text-6xl font-bold text-green-800">
+          <h1 className="mt-6 text-5xl md:text-6xl font-bold text-olive-500">
             About Agri Shoppers
           </h1>
 
-          <p className="mt-6 text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="mt-6 text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Agri Shoppers, a trusted brand of{" "}
             <strong>Agrigenesis Terrabloom Tech Private Limited</strong>,
             is dedicated to providing farmers with premium agricultural
@@ -49,11 +49,11 @@ const About = () => {
 
           {/* Content */}
           <div>
-            <h2 className="text-4xl font-bold text-green-700 mb-6">
+            <h2 className="text-4xl font-bold text-wheat-600 mb-6">
               Growing Agriculture with Innovation
             </h2>
 
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+            <p className="text-cream-700 text-lg leading-relaxed mb-6">
               At Agri Shoppers, we bridge the gap between modern technology
               and traditional farming. Our goal is to help farmers access
               quality agricultural products while improving productivity,
@@ -62,28 +62,28 @@ const About = () => {
 
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <FaSeedling className="text-green-600 text-2xl mt-1" />
+                <FaSeedling className="text-green-700 text-2xl mt-1" />
                 <p className="text-gray-700">
                   High-quality seeds, fertilizers, and farming essentials.
                 </p>
               </div>
 
               <div className="flex items-start gap-4">
-                <FaTruck className="text-green-600 text-2xl mt-1" />
+                <FaTruck className="text-green-700 text-2xl mt-1" />
                 <p className="text-gray-700">
                   Fast and reliable delivery across rural and urban India.
                 </p>
               </div>
 
               <div className="flex items-start gap-4">
-                <FaUsers className="text-green-600 text-2xl mt-1" />
+                <FaUsers className="text-green-700 text-2xl mt-1" />
                 <p className="text-gray-700">
                   Trusted by farmers and agricultural professionals.
                 </p>
               </div>
 
               <div className="flex items-start gap-4">
-                <FaLeaf className="text-green-600 text-2xl mt-1" />
+                <FaLeaf className="text-green-700 text-2xl mt-1" />
                 <p className="text-gray-700">
                   Promoting sustainable and eco-friendly farming practices.
                 </p>
@@ -94,7 +94,7 @@ const About = () => {
       </section>
 
       {/* Stats */}
-      <section className="bg-green-700 py-16 text-white">
+      <section className="bg-olive-800 py-16 text-white">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
           <div>
@@ -124,8 +124,8 @@ const About = () => {
       <section className="max-w-7xl mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-10">
 
-          <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
-            <h2 className="text-3xl font-bold text-green-700 mb-4">
+          <div className="bg-cream-200 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
+            <h2 className="text-3xl font-bold text-green-800 mb-4">
               🎯 Our Mission
             </h2>
 
@@ -136,8 +136,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
-            <h2 className="text-3xl font-bold text-green-700 mb-4">
+          <div className="bg-cream-200 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
+            <h2 className="text-3xl font-bold text-green-800 mb-4">
               🚀 Our Vision
             </h2>
 
@@ -153,7 +153,7 @@ const About = () => {
 
       {/* CTA */}
       <section className="pb-20 px-4">
-        <div className="max-w-5xl mx-auto bg-green-700 rounded-3xl p-10 text-center text-white">
+        <div className="max-w-5xl mx-auto bg-wheat-800 rounded-3xl p-10 text-center text-white">
 
           <h2 className="text-4xl font-bold mb-4">
             Join the Future of Farming
@@ -164,7 +164,7 @@ const About = () => {
             agricultural ecosystem for India.
           </p>
 
-          <button className="bg-white text-green-700 font-semibold px-8 py-3 rounded-full hover:bg-green-100 transition">
+          <button className="bg-white text-green-800 font-semibold px-8 py-3 rounded-full hover:bg-green-100 transition">
             Explore Products
           </button>
 

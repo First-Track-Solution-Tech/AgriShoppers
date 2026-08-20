@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from '../components/SearchBar';
+
 import SlideBanner from '../components/SlideBanner';
 import Filter from '../components/Filter';
 import CategoriesSection from '../components/CategoriesSection';
@@ -17,9 +17,7 @@ import AgriImpact from '../components/AgriImpact';
 const Home = () => {
     return (
         <>
-        <div className="pt-22"> 
-            <SearchBar />
-            </div>
+       
             <SlideBanner />
             <Filter />
             <CategoriesSection />
@@ -29,8 +27,9 @@ const Home = () => {
             <CropNutritionGuide />
             <PopularPicks />
             <WhyChooseUs />
-            <Testimonial />
             <AgriImpact />
+            <Testimonial />
+            
         </>
     );
 };

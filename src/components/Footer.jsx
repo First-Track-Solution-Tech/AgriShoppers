@@ -6,12 +6,12 @@ import {
   FaYoutube,
   FaTwitter,
 } from "react-icons/fa";
-import ChatBox from "./Chatbox";
+
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-slate-900 border-t border-slate-800 text-slate-300">
+      <footer className="bg-olive-950 text-cream-100 border-t border-slate-800 ">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
 
           {/* Logo */}
@@ -27,7 +27,7 @@ const Footer = () => {
               />
             </Link>
 
-            <p className="text-sm text-gray-400 mt-3">
+            <p className="text-sm text-cream-200 mt-3">
               Premium agricultural products with trusted brands,
               genuine quality, and fast delivery across India.
             </p>
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">
+            <h3 className="text-wheat-300 font-semibold mb-4">
               Quick Links
             </h3>
 
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Useful Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">
+            <h3 className="text-wheat-300 font-semibold mb-4">
               Useful Links
             </h3>
 
@@ -88,35 +88,31 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4">
+            <h3 className="text-wheat-300 font-semibold mb-4">
               Contact Us
             </h3>
 
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-cream-400">
               📧 info@agrishoppers.com
             </p>
 
-            <p className="text-sm text-gray-400 mt-2">
+            <p className="text-sm text-cream-400 mt-2">
               📞 +91 1234567890
             </p>
 
-            <p className="text-sm text-gray-400 mt-2">
+            <p className="text-sm text-cream-400 mt-2">
               📍 Bhubaneswar, Odisha, India
             </p>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-slate-800 text-center py-4 text-sm text-slate-400">
+        <div className="border-t border-olive-600/50 text-center py-4 text-sm hover:text-wheat-300">
           © 2026 AgriShoppers | Developed by First Track Solution Technologies.
           All Rights Reserved.
         </div>
 
-        {/* Chatbox */}
-        {/* Chatbox */}
-        <div className="mt-0 mb-11 flex justify-center md:justify-end">
-          <ChatBox />
-        </div>
+     
 
       </footer>
     </>
