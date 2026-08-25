@@ -55,3 +55,27 @@ body {
   background-color: var(--color-cream-50);
   color: var(--color-ink-800);
 }
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.animate-hero-in {
+  animation: fadeSlideUp 0.7s ease-out both;
+}
+ 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+ 
