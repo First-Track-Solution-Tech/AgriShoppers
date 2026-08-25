@@ -81,10 +81,10 @@ const Sitemap = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-green-50 via-white to-green-100 min-h-screen">
+      <div className="bg-gradient-to-b from-cream-100 via-white to-olive-50 min-h-screen">
         
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-700 to-green-600 py-20 text-white">
+        <section className="bg-gradient-to-r from-olive-800 to-olive-700 py-20 text-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
 
             <FaSitemap className="text-6xl mx-auto mb-6" />
@@ -93,7 +93,7 @@ const Sitemap = () => {
               Sitemap
             </h1>
 
-            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl max-w-3xl mx-auto text-cream-200">
               Quickly navigate through all important sections of
               AgriShoppers and find the information you need.
             </p>
@@ -104,11 +104,11 @@ const Sitemap = () => {
         {/* Intro Section */}
         <section className="max-w-6xl mx-auto px-4 py-16 text-center">
 
-          <h2 className="text-4xl font-bold text-green-800 mb-6">
+          <h2 className="text-4xl font-bold text-olive-800 mb-6">
             Explore Our Platform
           </h2>
 
-          <p className="text-gray-600 text-lg max-w-4xl mx-auto">
+          <p className="text-ink-500 text-lg max-w-4xl mx-auto">
             Access products, farmer resources, careers, quality information,
             tracking services, and other important pages through our
             easy-to-use navigation hub.
@@ -129,21 +129,21 @@ const Sitemap = () => {
               >
                 <div className="flex gap-5">
 
-                  <div className="w-16 h-16 bg-green-100 text-green-700 rounded-2xl flex items-center justify-center text-2xl">
+                  <div className="w-16 h-16 bg-wheat-100 text-olive-700 rounded-2xl flex items-center justify-center text-2xl">
                     {page.icon}
                   </div>
 
                   <div className="flex-1">
 
-                    <h3 className="text-2xl font-bold text-green-800 mb-3">
+                    <h3 className="text-2xl font-bold text-olive-800 mb-3">
                       {page.title}
                     </h3>
 
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-ink-500 mb-4">
                       {page.description}
                     </p>
 
-                    <div className="flex items-center text-green-700 font-semibold">
+                    <div className="flex items-center text-wheat-700 font-semibold">
                       Open Page
                       <FaArrowRight className="ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
@@ -161,7 +161,7 @@ const Sitemap = () => {
         {/* Platform Statistics */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
 
-          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+          <h2 className="text-4xl font-bold text-center text-olive-800 mb-12">
             Platform Highlights
           </h2>
 
@@ -172,15 +172,15 @@ const Sitemap = () => {
                 key={index}
                 className="bg-white p-8 rounded-3xl shadow-lg text-center"
               >
-                <div className="text-green-700 text-4xl mb-4 flex justify-center">
+                <div className="text-wheat-600 text-4xl mb-4 flex justify-center">
                   {item.icon}
                 </div>
 
-                <h3 className="text-3xl font-bold text-green-700 mb-2">
+                <h3 className="text-3xl font-bold text-olive-700 mb-2">
                   {item.number}
                 </h3>
 
-                <p className="text-gray-600">
+                <p className="text-ink-500">
                   {item.label}
                 </p>
               </div>
@@ -195,11 +195,11 @@ const Sitemap = () => {
 
           <div className="bg-white rounded-3xl shadow-xl p-10">
 
-            <h2 className="text-4xl font-bold text-green-800 mb-6">
+            <h2 className="text-4xl font-bold text-olive-800 mb-6">
               Quick Access
             </h2>
 
-            <p className="text-gray-600 text-lg mb-8">
+            <p className="text-ink-500 text-lg mb-8">
               Use the sitemap to quickly locate pages related to products,
               policies, support services, farmer resources, logistics,
               and company information.
@@ -207,15 +207,15 @@ const Sitemap = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
                 🌱 Farmer Resources
               </div>
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
                 📦 Product Information
               </div>
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
                 🚚 Order Tracking
               </div>
 
@@ -228,7 +228,7 @@ const Sitemap = () => {
         {/* Benefits Section */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
 
-          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+          <h2 className="text-4xl font-bold text-center text-olive-800 mb-12">
             Why Use Our Sitemap?
           </h2>
 
@@ -236,30 +236,30 @@ const Sitemap = () => {
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
               <div className="text-5xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-olive-800 mb-3">
                 Faster Navigation
               </h3>
-              <p className="text-gray-600">
+              <p className="text-ink-500">
                 Reach any important page quickly without searching.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
               <div className="text-5xl mb-4">📱</div>
-              <h3 className="text-xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-olive-800 mb-3">
                 Mobile Friendly
               </h3>
-              <p className="text-gray-600">
+              <p className="text-ink-500">
                 Easy navigation experience across all devices.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
               <div className="text-5xl mb-4">🔍</div>
-              <h3 className="text-xl font-bold text-green-800 mb-3">
+              <h3 className="text-xl font-bold text-olive-800 mb-3">
                 Better Accessibility
               </h3>
-              <p className="text-gray-600">
+              <p className="text-ink-500">
                 Find information, resources, and services easily.
               </p>
             </div>
@@ -271,20 +271,20 @@ const Sitemap = () => {
         {/* CTA Section */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
 
-          <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-[40px] p-12 text-center text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-olive-800 to-olive-700 rounded-[40px] p-12 text-center text-white shadow-2xl">
 
             <h2 className="text-4xl font-bold mb-5">
               Ready to Explore AgriShoppers?
             </h2>
 
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 text-cream-200">
               Discover products, resources, support services,
               and opportunities built for modern agriculture.
             </p>
 
             <Link
               to="/products"
-              className="inline-block bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-100 transition"
+              className="inline-block bg-wheat-400 text-ink-900 px-8 py-4 rounded-full font-bold hover:bg-wheat-500 transition"
             >
               Browse Products
             </Link>
