@@ -2,14 +2,14 @@ import React from "react";
 
 const Equipment = () => {
     const toolColors = [
-        "bg-gradient-to-br from-green-100 to-green-200",
-        "bg-gradient-to-br from-blue-100 to-blue-200",
-        "bg-gradient-to-br from-yellow-100 to-yellow-200",
-        "bg-gradient-to-br from-pink-100 to-pink-200",
-        "bg-gradient-to-br from-purple-100 to-purple-200",
-        "bg-gradient-to-br from-orange-100 to-orange-200",
-        "bg-gradient-to-br from-cyan-100 to-cyan-200",
-        "bg-gradient-to-br from-red-100 to-red-200",
+        "bg-gradient-to-br from-olive-100 to-olive-200",
+        "bg-gradient-to-br from-wheat-100 to-wheat-200",
+        "bg-gradient-to-br from-cream-200 to-wheat-200",
+        "bg-gradient-to-br from-olive-50 to-olive-100",
+        "bg-gradient-to-br from-wheat-50 to-wheat-100",
+        "bg-gradient-to-br from-olive-200 to-olive-300",
+        "bg-gradient-to-br from-wheat-200 to-wheat-300",
+        "bg-gradient-to-br from-cream-100 to-olive-100",
       ];
       
       const farmTools = [
@@ -56,7 +56,7 @@ const Equipment = () => {
       ];
   return (
     
-    <div className="bg-gray-50 min-h-screen pt-20">
+    <div className="bg-cream-50 min-h-screen pt-20">
 
       {/* Hero Section */}
       <section className="relative h-[350px] md:h-[450px]">
@@ -82,11 +82,11 @@ const Equipment = () => {
       {/* Introduction */}
       <section className="max-w-7xl mx-auto px-4 py-14">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-green-800">
+          <h2 className="text-3xl font-bold text-olive-800">
             Essential Tools for Every Farmer
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-ink-600 max-w-3xl mx-auto">
             Discover the most commonly used farm tools that help improve
             productivity, reduce manual effort, and support modern
             agricultural practices.
@@ -96,7 +96,7 @@ const Equipment = () => {
 
       {/* Farm Tools Section */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
-  <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+  <h2 className="text-3xl font-bold text-center text-olive-800 mb-12">
     Essential Farm Tools
   </h2>
 
@@ -117,11 +117,11 @@ const Equipment = () => {
           {tool.icon}
         </div>
 
-        <h3 className="text-xl font-bold mb-3 text-gray-800">
+        <h3 className="text-xl font-bold mb-3 text-ink-800">
           {tool.title}
         </h3>
 
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-ink-700 leading-relaxed">
           {tool.desc}
         </p>
       </div>
@@ -130,7 +130,7 @@ const Equipment = () => {
 </section>
 
       {/* Statistics Section */}
-      <section className="bg-green-700 text-white py-16">
+      <section className="bg-olive-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="grid md:grid-cols-4 gap-8 text-center">
@@ -164,44 +164,44 @@ const Equipment = () => {
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4">
 
-          <h2 className="text-3xl font-bold text-center text-green-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-olive-800 mb-12">
             Why Choose Our Farm Equipment?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="bg-gray-50 p-8 rounded-xl shadow text-center">
+            <div className="bg-wheat-50 p-8 rounded-xl shadow text-center">
               <div className="text-5xl mb-4">🚜</div>
 
-              <h3 className="font-bold text-xl mb-2">
+              <h3 className="font-bold text-xl mb-2 text-ink-800">
                 Quality Equipment
               </h3>
 
-              <p className="text-gray-600">
+              <p className="text-ink-600">
                 Reliable and durable tools designed for modern farming needs.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl shadow text-center">
+            <div className="bg-wheat-50 p-8 rounded-xl shadow text-center">
               <div className="text-5xl mb-4">💰</div>
 
-              <h3 className="font-bold text-xl mb-2">
+              <h3 className="font-bold text-xl mb-2 text-ink-800">
                 Affordable Solutions
               </h3>
 
-              <p className="text-gray-600">
+              <p className="text-ink-600">
                 Cost-effective tools that help maximize farm productivity.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl shadow text-center">
+            <div className="bg-wheat-50 p-8 rounded-xl shadow text-center">
               <div className="text-5xl mb-4">⚡</div>
 
-              <h3 className="font-bold text-xl mb-2">
+              <h3 className="font-bold text-xl mb-2 text-ink-800">
                 Better Efficiency
               </h3>
 
-              <p className="text-gray-600">
+              <p className="text-ink-600">
                 Reduce manual effort and save valuable farming time.
               </p>
             </div>

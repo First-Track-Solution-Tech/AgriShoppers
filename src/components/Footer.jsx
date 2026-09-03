@@ -6,7 +6,7 @@ import {
   FaYoutube,
   FaTwitter,
 } from "react-icons/fa";
-
+import ChatBox from "./Chatbox";
 
 const Footer = () => {
   return (
@@ -112,7 +112,7 @@ const Footer = () => {
           All Rights Reserved.
         </div>
 
-     
+     <ChatBox />
 
       </footer>
     </>

@@ -48,10 +48,10 @@ const DeliveryAndLogistics = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-green-50 via-white to-green-100 min-h-screen">
+      <div className="bg-gradient-to-b from-cream-100 via-white to-olive-50 min-h-screen">
         
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-700 to-green-600 py-20 text-white">
+        <section className="bg-gradient-to-r from-olive-800 to-olive-700 py-20 text-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
 
             <FaTruck className="mx-auto text-6xl mb-6" />
@@ -60,7 +60,7 @@ const DeliveryAndLogistics = () => {
               Delivery & Logistics
             </h1>
 
-            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl max-w-3xl mx-auto text-cream-200">
               Reliable, transparent, and efficient logistics solutions
               designed to deliver quality agricultural products directly
               to farmers across India.
@@ -71,11 +71,11 @@ const DeliveryAndLogistics = () => {
 
         {/* Intro */}
         <section className="max-w-6xl mx-auto px-4 py-16 text-center">
-          <h2 className="text-4xl font-bold text-green-800 mb-6">
+          <h2 className="text-4xl font-bold text-olive-800 mb-6">
             Smart Logistics Network
           </h2>
 
-          <p className="text-gray-600 text-lg max-w-4xl mx-auto">
+          <p className="text-ink-500 text-lg max-w-4xl mx-auto">
             Our delivery infrastructure is built to ensure products reach
             farmers quickly and safely. From warehouse management to
             last-mile delivery, we focus on speed, accuracy, and reliability.
@@ -91,15 +91,15 @@ const DeliveryAndLogistics = () => {
                 key={index}
                 className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
               >
-                <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-700 text-3xl mb-5">
+                <div className="w-16 h-16 bg-wheat-100 rounded-2xl flex items-center justify-center text-olive-700 text-3xl mb-5">
                   {item.icon}
                 </div>
 
-                <h3 className="text-xl font-bold text-green-800 mb-3">
+                <h3 className="text-xl font-bold text-olive-800 mb-3">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-ink-500 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -111,48 +111,48 @@ const DeliveryAndLogistics = () => {
         {/* Delivery Process */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
 
-          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+          <h2 className="text-4xl font-bold text-center text-olive-800 mb-12">
             Our Delivery Process
           </h2>
 
           <div className="grid md:grid-cols-4 gap-6">
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
-              <FaCheckCircle className="text-green-600 text-4xl mx-auto mb-4" />
-              <h3 className="font-bold text-green-800 text-lg">
+              <FaCheckCircle className="text-wheat-600 text-4xl mx-auto mb-4" />
+              <h3 className="font-bold text-olive-800 text-lg">
                 Order Confirmed
               </h3>
-              <p className="text-gray-600 mt-2 text-sm">
+              <p className="text-ink-500 mt-2 text-sm">
                 Your order is received and verified.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
-              <FaBox className="text-green-600 text-4xl mx-auto mb-4" />
-              <h3 className="font-bold text-green-800 text-lg">
+              <FaBox className="text-wheat-600 text-4xl mx-auto mb-4" />
+              <h3 className="font-bold text-olive-800 text-lg">
                 Product Packed
               </h3>
-              <p className="text-gray-600 mt-2 text-sm">
+              <p className="text-ink-500 mt-2 text-sm">
                 Products are securely packed for shipment.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
-              <FaShippingFast className="text-green-600 text-4xl mx-auto mb-4" />
-              <h3 className="font-bold text-green-800 text-lg">
+              <FaShippingFast className="text-wheat-600 text-4xl mx-auto mb-4" />
+              <h3 className="font-bold text-olive-800 text-lg">
                 Shipped
               </h3>
-              <p className="text-gray-600 mt-2 text-sm">
+              <p className="text-ink-500 mt-2 text-sm">
                 Shipment leaves our warehouse.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-lg text-center">
-              <FaTruck className="text-green-600 text-4xl mx-auto mb-4" />
-              <h3 className="font-bold text-green-800 text-lg">
+              <FaTruck className="text-wheat-600 text-4xl mx-auto mb-4" />
+              <h3 className="font-bold text-olive-800 text-lg">
                 Delivered
               </h3>
-              <p className="text-gray-600 mt-2 text-sm">
+              <p className="text-ink-500 mt-2 text-sm">
                 Delivered safely to your location.
               </p>
             </div>
@@ -164,7 +164,7 @@ const DeliveryAndLogistics = () => {
         {/* Statistics */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
 
-          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">
+          <h2 className="text-4xl font-bold text-center text-olive-800 mb-12">
             Logistics Performance
           </h2>
 
@@ -175,11 +175,11 @@ const DeliveryAndLogistics = () => {
                 key={index}
                 className="bg-white p-8 rounded-3xl shadow-lg text-center"
               >
-                <h3 className="text-4xl font-bold text-green-700 mb-2">
+                <h3 className="text-4xl font-bold text-olive-700 mb-2">
                   {item.number}
                 </h3>
 
-                <p className="text-gray-600">
+                <p className="text-ink-500">
                   {item.label}
                 </p>
               </div>
@@ -194,11 +194,11 @@ const DeliveryAndLogistics = () => {
 
           <div className="bg-white rounded-3xl shadow-xl p-10">
 
-            <h2 className="text-4xl font-bold text-green-800 mb-6">
+            <h2 className="text-4xl font-bold text-olive-800 mb-6">
               Nationwide Coverage
             </h2>
 
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-ink-500 text-lg leading-relaxed">
               Our logistics network covers urban, semi-urban, and rural
               locations across India. We continuously expand our delivery
               network to ensure farmers receive products quickly and efficiently,
@@ -215,29 +215,29 @@ const DeliveryAndLogistics = () => {
           <div className="bg-white rounded-3xl shadow-xl p-10">
 
             <div className="flex items-center gap-4 mb-6">
-              <FaHeadset className="text-green-700 text-4xl" />
+              <FaHeadset className="text-olive-700 text-4xl" />
 
-              <h2 className="text-4xl font-bold text-green-800">
+              <h2 className="text-4xl font-bold text-olive-800">
                 Need Delivery Assistance?
               </h2>
             </div>
 
-            <p className="text-gray-600 text-lg mb-8">
+            <p className="text-ink-500 text-lg mb-8">
               Our customer support team is available to help with
               shipment updates, tracking queries, and delivery concerns.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
                 📞 Call Support
               </div>
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
                 ✉️ Email Support
               </div>
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
                 💬 Live Chat Support
               </div>
 
@@ -250,17 +250,17 @@ const DeliveryAndLogistics = () => {
         {/* CTA Section */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
 
-          <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-[40px] p-12 text-center text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-olive-800 to-olive-700 rounded-[40px] p-12 text-center text-white shadow-2xl">
 
             <h2 className="text-4xl font-bold mb-5">
               Reliable Delivery Across India
             </h2>
 
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 text-cream-200">
               Fast, secure, and transparent logistics for every farmer.
             </p>
 
-            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-100 transition">
+            <button className="bg-wheat-400 text-ink-900 px-8 py-4 rounded-full font-bold hover:bg-wheat-500 transition">
               Track Your Order
             </button>
 

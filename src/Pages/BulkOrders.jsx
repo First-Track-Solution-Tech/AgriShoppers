@@ -2,7 +2,7 @@ import React from "react";
 
 const BulkOrders = () => {
   return (
-    <div className="bg-gray-50 min-h-screen pt-20">
+    <div className="bg-cream-50 min-h-screen pt-20">
 
       {/* Hero Section */}
       <section className="relative h-[350px] md:h-[500px]">
@@ -12,17 +12,17 @@ const BulkOrders = () => {
           className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/50 flex items-center">
+        <div className="absolute inset-0 bg-ink-900/55 flex items-center">
           <div className="max-w-7xl mx-auto px-6 text-white">
             <h1 className="text-4xl md:text-6xl font-bold">
               Bulk Orders
             </h1>
 
-            <p className="mt-4 text-lg md:text-2xl">
+            <p className="mt-4 text-lg md:text-2xl text-cream-100">
               Save More with Large Quantity Purchases
             </p>
 
-            <button className="mt-6 px-8 py-3 bg-orange-500 hover:bg-orange-600 rounded-xl font-semibold transition">
+            <button className="mt-6 px-8 py-3 bg-wheat-500 hover:bg-wheat-600 text-ink-900 rounded-xl font-semibold transition">
               Request Quote
             </button>
           </div>
@@ -31,11 +31,11 @@ const BulkOrders = () => {
 
       {/* Intro */}
       <section className="max-w-7xl mx-auto px-4 py-14 text-center">
-        <h2 className="text-3xl font-bold text-orange-600">
+        <h2 className="text-3xl font-bold text-wheat-700">
           Special Pricing for Bulk Buyers
         </h2>
 
-        <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+        <p className="mt-4 text-ink-600 max-w-3xl mx-auto">
           Get exclusive discounts, priority delivery, and dedicated
           support for large agricultural purchases.
         </p>
@@ -43,48 +43,56 @@ const BulkOrders = () => {
 
       {/* Why Choose Us */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl font-bold text-center text-ink-900 mb-12">
           Why Choose Bulk Orders?
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          <div className="bg-orange-100 rounded-2xl p-8 text-center shadow">
-            <div className="text-5xl mb-4">💰</div>
-            <h3 className="font-bold text-xl">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-wheat-100 flex items-center justify-center text-3xl">
+              💰
+            </div>
+            <h3 className="font-bold text-xl text-ink-900">
               Better Pricing
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-ink-600 mt-2">
               Enjoy exclusive wholesale discounts.
             </p>
           </div>
 
-          <div className="bg-yellow-100 rounded-2xl p-8 text-center shadow">
-            <div className="text-5xl mb-4">📦</div>
-            <h3 className="font-bold text-xl">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cream-200 flex items-center justify-center text-3xl">
+              📦
+            </div>
+            <h3 className="font-bold text-xl text-ink-900">
               Large Inventory
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-ink-600 mt-2">
               Access products in large quantities.
             </p>
           </div>
 
-          <div className="bg-red-100 rounded-2xl p-8 text-center shadow">
-            <div className="text-5xl mb-4">🚚</div>
-            <h3 className="font-bold text-xl">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-olive-100 flex items-center justify-center text-3xl">
+              🚚
+            </div>
+            <h3 className="font-bold text-xl text-ink-900">
               Priority Delivery
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-ink-600 mt-2">
               Faster shipping for bulk purchases.
             </p>
           </div>
 
-          <div className="bg-amber-100 rounded-2xl p-8 text-center shadow">
-            <div className="text-5xl mb-4">🤝</div>
-            <h3 className="font-bold text-xl">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-wheat-200 flex items-center justify-center text-3xl">
+              🤝
+            </div>
+            <h3 className="font-bold text-xl text-ink-900">
               Dedicated Support
             </h3>
-            <p className="text-gray-600 mt-2">
+            <p className="text-ink-600 mt-2">
               Personal assistance for every order.
             </p>
           </div>
@@ -92,78 +100,62 @@ const BulkOrders = () => {
         </div>
       </section>
 
-      {/* Order Process */}
+      {/* Order Process — grid of numbered cards instead of a vertical timeline */}
       <section className="bg-white py-16">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
 
-          <h2 className="text-3xl font-bold text-center text-orange-600 mb-12">
+          <h2 className="text-3xl font-bold text-center text-wheat-700 mb-12">
             How It Works
           </h2>
 
-          <div className="space-y-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">
+            <div className="relative bg-wheat-50 rounded-2xl p-6 pt-10 text-center">
+              <span className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-wheat-500 text-ink-900 flex items-center justify-center font-bold shadow">
                 1
-              </div>
-
-              <div>
-                <h3 className="font-bold text-xl">
-                  Submit Requirement
-                </h3>
-
-                <p className="text-gray-600">
-                  Share your product requirements and quantity.
-                </p>
-              </div>
+              </span>
+              <h3 className="font-bold text-lg text-ink-900">
+                Submit Requirement
+              </h3>
+              <p className="text-ink-600 mt-2 text-sm">
+                Share your product requirements and quantity.
+              </p>
             </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">
+            <div className="relative bg-wheat-50 rounded-2xl p-6 pt-10 text-center">
+              <span className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-wheat-500 text-ink-900 flex items-center justify-center font-bold shadow">
                 2
-              </div>
-
-              <div>
-                <h3 className="font-bold text-xl">
-                  Receive Custom Quote
-                </h3>
-
-                <p className="text-gray-600">
-                  Our team prepares a personalized quotation.
-                </p>
-              </div>
+              </span>
+              <h3 className="font-bold text-lg text-ink-900">
+                Receive Custom Quote
+              </h3>
+              <p className="text-ink-600 mt-2 text-sm">
+                Our team prepares a personalized quotation.
+              </p>
             </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">
+            <div className="relative bg-wheat-50 rounded-2xl p-6 pt-10 text-center">
+              <span className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-wheat-500 text-ink-900 flex items-center justify-center font-bold shadow">
                 3
-              </div>
-
-              <div>
-                <h3 className="font-bold text-xl">
-                  Confirm Order
-                </h3>
-
-                <p className="text-gray-600">
-                  Approve pricing and place your order.
-                </p>
-              </div>
+              </span>
+              <h3 className="font-bold text-lg text-ink-900">
+                Confirm Order
+              </h3>
+              <p className="text-ink-600 mt-2 text-sm">
+                Approve pricing and place your order.
+              </p>
             </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">
+            <div className="relative bg-olive-700 rounded-2xl p-6 pt-10 text-center">
+              <span className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-white text-olive-700 flex items-center justify-center font-bold shadow">
                 4
-              </div>
-
-              <div>
-                <h3 className="font-bold text-xl">
-                  Fast Delivery
-                </h3>
-
-                <p className="text-gray-600">
-                  Get your products delivered quickly.
-                </p>
-              </div>
+              </span>
+              <h3 className="font-bold text-lg text-white">
+                Fast Delivery
+              </h3>
+              <p className="text-cream-100 mt-2 text-sm">
+                Get your products delivered quickly.
+              </p>
             </div>
 
           </div>
@@ -173,36 +165,36 @@ const BulkOrders = () => {
 
       {/* Who Can Order */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl font-bold text-center text-ink-900 mb-12">
           Who Can Place Bulk Orders?
         </h2>
 
         <div className="grid md:grid-cols-4 gap-8">
 
-          <div className="bg-white rounded-2xl p-8 text-center shadow">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-wheat-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="text-5xl">🌾</div>
-            <h3 className="font-bold mt-4">
+            <h3 className="font-bold mt-4 text-ink-900">
               Farmer Groups
             </h3>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 text-center shadow">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-wheat-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="text-5xl">🏪</div>
-            <h3 className="font-bold mt-4">
+            <h3 className="font-bold mt-4 text-ink-900">
               Retailers
             </h3>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 text-center shadow">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-wheat-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="text-5xl">🏭</div>
-            <h3 className="font-bold mt-4">
+            <h3 className="font-bold mt-4 text-ink-900">
               Distributors
             </h3>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 text-center shadow">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-wheat-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div className="text-5xl">🤝</div>
-            <h3 className="font-bold mt-4">
+            <h3 className="font-bold mt-4 text-ink-900">
               Cooperatives
             </h3>
           </div>
@@ -210,32 +202,28 @@ const BulkOrders = () => {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-orange-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Stats — outlined cards on cream, not a solid band */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="grid md:grid-cols-4 gap-6">
 
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+          <div className="rounded-2xl border-2 border-wheat-300 bg-white p-8 text-center">
+            <h2 className="text-4xl font-bold text-wheat-600">5000+</h2>
+            <p className="text-ink-600 mt-1">Bulk Orders</p>
+          </div>
 
-            <div>
-              <h2 className="text-4xl font-bold">5000+</h2>
-              <p>Bulk Orders</p>
-            </div>
+          <div className="rounded-2xl border-2 border-wheat-300 bg-white p-8 text-center">
+            <h2 className="text-4xl font-bold text-wheat-600">100+</h2>
+            <p className="text-ink-600 mt-1">Partner Brands</p>
+          </div>
 
-            <div>
-              <h2 className="text-4xl font-bold">100+</h2>
-              <p>Partner Brands</p>
-            </div>
+          <div className="rounded-2xl border-2 border-wheat-300 bg-white p-8 text-center">
+            <h2 className="text-4xl font-bold text-wheat-600">50+</h2>
+            <p className="text-ink-600 mt-1">Cities Served</p>
+          </div>
 
-            <div>
-              <h2 className="text-4xl font-bold">50+</h2>
-              <p>Cities Served</p>
-            </div>
-
-            <div>
-              <h2 className="text-4xl font-bold">24/7</h2>
-              <p>Support</p>
-            </div>
-
+          <div className="rounded-2xl border-2 border-wheat-300 bg-white p-8 text-center">
+            <h2 className="text-4xl font-bold text-wheat-600">24/7</h2>
+            <p className="text-ink-600 mt-1">Support</p>
           </div>
 
         </div>
@@ -245,56 +233,60 @@ const BulkOrders = () => {
       <section className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-4">
 
-          <h2 className="text-3xl font-bold text-center text-orange-600 mb-10">
-            Request a Quote
-          </h2>
+          <div className="bg-wheat-50 rounded-3xl p-8 md:p-10">
 
-          <form className="space-y-4">
+            <h2 className="text-3xl font-bold text-center text-wheat-700 mb-8">
+              Request a Quote
+            </h2>
 
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border rounded-xl p-3"
-            />
+            <form className="space-y-4">
 
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full border rounded-xl p-3"
-            />
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="w-full border border-ink-200 rounded-xl p-3 bg-white text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-wheat-500 focus:border-wheat-500"
+              />
 
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full border rounded-xl p-3"
-            />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="w-full border border-ink-200 rounded-xl p-3 bg-white text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-wheat-500 focus:border-wheat-500"
+              />
 
-            <input
-              type="text"
-              placeholder="Product Required"
-              className="w-full border rounded-xl p-3"
-            />
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="w-full border border-ink-200 rounded-xl p-3 bg-white text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-wheat-500 focus:border-wheat-500"
+              />
 
-            <input
-              type="number"
-              placeholder="Quantity"
-              className="w-full border rounded-xl p-3"
-            />
+              <input
+                type="text"
+                placeholder="Product Required"
+                className="w-full border border-ink-200 rounded-xl p-3 bg-white text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-wheat-500 focus:border-wheat-500"
+              />
 
-            <textarea
-              rows="4"
-              placeholder="Additional Requirements"
-              className="w-full border rounded-xl p-3"
-            />
+              <input
+                type="number"
+                placeholder="Quantity"
+                className="w-full border border-ink-200 rounded-xl p-3 bg-white text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-wheat-500 focus:border-wheat-500"
+              />
 
-            <button
-              type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl font-semibold"
-            >
-              Request Quote
-            </button>
+              <textarea
+                rows="4"
+                placeholder="Additional Requirements"
+                className="w-full border border-ink-200 rounded-xl p-3 bg-white text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-wheat-500 focus:border-wheat-500"
+              />
 
-          </form>
+              <button
+                type="submit"
+                className="w-full bg-wheat-500 hover:bg-wheat-600 text-ink-900 py-3 rounded-xl font-semibold transition"
+              >
+                Request Quote
+              </button>
+
+            </form>
+
+          </div>
 
         </div>
       </section>
