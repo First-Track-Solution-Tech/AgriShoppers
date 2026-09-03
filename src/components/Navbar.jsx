@@ -135,18 +135,17 @@ const Navbar = () => {
 
       {/* Overlay */}
       {open && (
-        <div
-          onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/50 z-40"
-        />
-      )}
-
+  <div
+    onClick={() => setOpen(false)}
+    className="fixed inset-0 bg-black/50 z-[55]"
+  />
+)}
       {/* Drawer — mobile only */}
-      <div
-        className={`fixed top-0 right-0 h-full w-72 bg-ink-900 z-50 shadow-2xl transform transition-transform duration-300 overflow-y-auto md:hidden ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+     <div
+  className={`fixed top-0 right-0 h-full w-72 bg-ink-900 z-[60] shadow-2xl transform transition-transform duration-300 overflow-y-auto md:hidden ${
+    open ? "translate-x-0" : "translate-x-full"
+  }`}
+>
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-ink-700 sticky top-0 bg-ink-900">
           <h2 className="text-wheat-300 text-lg font-semibold">
@@ -161,7 +160,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className="flex flex-col p-5 text-cream-100 text-sm">
+        <div className="flex flex-col p-5 pb-16 text-cream-100 text-sm">
 
           {/* Cart */}
           <Link

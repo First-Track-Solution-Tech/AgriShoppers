@@ -50,10 +50,10 @@ const FAQ = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-green-50 via-white to-green-100 min-h-screen">
+      <div className="bg-gradient-to-b from-cream-100 via-white to-olive-50 min-h-screen">
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-700 to-green-600 py-20 text-white">
+        <section className="bg-gradient-to-r from-olive-800 to-olive-700 py-20 text-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
             <HelpCircle className="mx-auto mb-5 w-16 h-16" />
 
@@ -61,7 +61,7 @@ const FAQ = () => {
               Help Center
             </h1>
 
-            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl max-w-3xl mx-auto text-cream-200">
               Find answers to the most commonly asked questions about
               AgriShoppers products, orders, delivery, and support.
             </p>
@@ -71,15 +71,15 @@ const FAQ = () => {
         {/* Search Bar */}
         <section className="max-w-4xl mx-auto px-4 -mt-10 relative z-10">
           <div className="bg-white rounded-3xl shadow-xl p-6">
-            <div className="flex items-center gap-3 border rounded-xl px-4 py-3">
-              <Search size={20} className="text-green-600" />
+            <div className="flex items-center gap-3 border border-olive-200 rounded-xl px-4 py-3">
+              <Search size={20} className="text-wheat-600" />
 
               <input
                 type="text"
                 placeholder="Search your question..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full outline-none"
+                className="w-full outline-none text-ink-800 placeholder:text-ink-300"
               />
             </div>
           </div>
@@ -90,23 +90,23 @@ const FAQ = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
             <div className="bg-white p-6 rounded-2xl shadow text-center">
-              <h3 className="text-3xl font-bold text-green-700">5000+</h3>
-              <p className="text-gray-600 mt-2">Happy Farmers</p>
+              <h3 className="text-3xl font-bold text-olive-700">5000+</h3>
+              <p className="text-ink-500 mt-2">Happy Farmers</p>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow text-center">
-              <h3 className="text-3xl font-bold text-green-700">1000+</h3>
-              <p className="text-gray-600 mt-2">Products</p>
+              <h3 className="text-3xl font-bold text-olive-700">1000+</h3>
+              <p className="text-ink-500 mt-2">Products</p>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow text-center">
-              <h3 className="text-3xl font-bold text-green-700">24/7</h3>
-              <p className="text-gray-600 mt-2">Support</p>
+              <h3 className="text-3xl font-bold text-olive-700">24/7</h3>
+              <p className="text-ink-500 mt-2">Support</p>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow text-center">
-              <h3 className="text-3xl font-bold text-green-700">100%</h3>
-              <p className="text-gray-600 mt-2">Genuine Products</p>
+              <h3 className="text-3xl font-bold text-olive-700">100%</h3>
+              <p className="text-ink-500 mt-2">Genuine Products</p>
             </div>
 
           </div>
@@ -116,11 +116,11 @@ const FAQ = () => {
         <section className="max-w-5xl mx-auto px-4 pb-20">
 
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-green-800">
+            <h2 className="text-4xl font-bold text-olive-800">
               Frequently Asked Questions
             </h2>
 
-            <p className="text-gray-600 mt-3">
+            <p className="text-ink-500 mt-3">
               Everything you need to know about AgriShoppers.
             </p>
           </div>
@@ -139,12 +139,12 @@ const FAQ = () => {
                     onClick={() => toggleFAQ(index)}
                     className="w-full flex justify-between items-center px-6 py-5 text-left"
                   >
-                    <span className="font-semibold text-lg text-gray-800">
+                    <span className="font-semibold text-lg text-ink-800">
                       {faq.question}
                     </span>
 
                     <ChevronDown
-                      className={`text-green-700 transition-transform duration-300 ${
+                      className={`text-wheat-600 transition-transform duration-300 ${
                         isOpen ? "rotate-180" : ""
                       }`}
                     />
@@ -157,7 +157,7 @@ const FAQ = () => {
                         : "max-h-0 opacity-0 px-6"
                     }`}
                   >
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-ink-500 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -168,7 +168,7 @@ const FAQ = () => {
           </div>
 
           {filteredFaqs.length === 0 && (
-            <div className="text-center py-10 text-gray-500">
+            <div className="text-center py-10 text-ink-400">
               No FAQs found.
             </div>
           )}
@@ -178,26 +178,26 @@ const FAQ = () => {
         <section className="max-w-6xl mx-auto px-4 pb-20">
           <div className="bg-white rounded-3xl shadow-xl p-10">
 
-            <h2 className="text-4xl font-bold text-green-800 text-center mb-8">
+            <h2 className="text-4xl font-bold text-olive-800 text-center mb-8">
               Need More Help?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
-                <Phone className="mx-auto mb-4 text-green-700" size={40} />
-                <h3 className="font-bold text-green-800 mb-2">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
+                <Phone className="mx-auto mb-4 text-olive-700" size={40} />
+                <h3 className="font-bold text-olive-800 mb-2">
                   Call Support
                 </h3>
-                <p className="text-gray-600">+91 1234567890</p>
+                <p className="text-ink-500">+91 1234567890</p>
               </div>
 
-              <div className="bg-green-50 p-6 rounded-2xl text-center">
-                <Mail className="mx-auto mb-4 text-green-700" size={40} />
-                <h3 className="font-bold text-green-800 mb-2">
+              <div className="bg-cream-100 p-6 rounded-2xl text-center">
+                <Mail className="mx-auto mb-4 text-olive-700" size={40} />
+                <h3 className="font-bold text-olive-800 mb-2">
                   Email Support
                 </h3>
-                <p className="text-gray-600">info@agrishoppers.com</p>
+                <p className="text-ink-500">info@agrishoppers.com</p>
               </div>
 
             </div>
@@ -207,17 +207,17 @@ const FAQ = () => {
 
         {/* CTA */}
         <section className="max-w-6xl mx-auto px-4 pb-20">
-          <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-[40px] p-12 text-center text-white shadow-2xl">
+          <div className="bg-gradient-to-r from-olive-800 to-olive-700 rounded-[40px] p-12 text-center text-white shadow-2xl">
 
             <h2 className="text-4xl font-bold mb-4">
               Still Have Questions?
             </h2>
 
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 text-cream-200">
               Our support team is always ready to assist you.
             </p>
 
-            <button className="bg-white text-green-700 px-8 py-4 rounded-full font-bold hover:bg-green-100 transition">
+            <button className="bg-wheat-400 text-ink-900 px-8 py-4 rounded-full font-bold hover:bg-wheat-500 transition">
               Contact Support
             </button>
 
